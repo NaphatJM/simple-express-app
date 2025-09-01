@@ -28,6 +28,8 @@ app.use((req, res, next) => {
 
 // Code Smell #1
 // TODO: this is first code smell
+// Code Smell #2
+// TODO: this is second code smell
 app.get("/", (req, res) => {
     console.log(">>> Checkout page visited");
     res.send("Hello World!");
