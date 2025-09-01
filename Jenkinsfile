@@ -1,6 +1,9 @@
 pipeline {
     agent any
-
+    
+    tools {
+        nodejs 'node20' // 
+    }
     environment {
         SONARQUBE = credentials('sonarqube-token') // ชื่อ Credential ของ Jenkins
     }
