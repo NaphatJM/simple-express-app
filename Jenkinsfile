@@ -23,7 +23,7 @@ pipeline {
 
         stage('SonarQube Scan') {
             steps {
-                withSonarQubeEnv('SonarQube') {
+                withSonarQubeEnv('sonarqube') {
                     sh 'npx sonar-scanner -Dsonar.projectKey=mywebapp'
                 }
             }
