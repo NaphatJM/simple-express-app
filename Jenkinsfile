@@ -2,7 +2,7 @@ pipeline {
     agent any
     
     tools {
-        nodejs 'node24' // 
+        nodejs 'Node24' // 
     }
     environment {
         SONARQUBE = credentials('sonarqube-token') // ชื่อ Credential ของ Jenkins
