@@ -11,7 +11,8 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/NaphatJM/simple-express-app.git'
+                git branch: 'feature', url: 'https://github.com/NaphatJM/simple-express-app.git'
+                echo "Checked out branch: feature"
             }
         }
 
