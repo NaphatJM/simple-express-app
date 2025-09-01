@@ -26,12 +26,10 @@ app.use((req, res, next) => {
     next();
 });
 
-// Code Smell #1: unused variable
-const UNUSED_FLAG = process.env.UNUSED_FLAG || "off";
-
-// Code Smell #2: TODO tag
-// TODO: remove this temporary TODO after finishing Sonar exercise
-
+// Code Smell #1
+// TODO: this is first code smell
+// Code Smell #2
+// TODO: this is second code smell
 app.get("/", (req, res) => {
     console.log(">>> Checkout page visited");
     res.send("Hello World!");
